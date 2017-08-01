@@ -9,11 +9,11 @@
 
 (function() {
     /**
-     * Get provided username's repo from Github.
+     * Get and format provided username's repo data from Github to table.
      * @param {String} username 
      * @return {undefined}
      */
-    function getUserRepo(username) {
+    function listUserRepo(username) {
         // Remove the status message if any exists. 
         if ($("#status_msg p").length > 0) {
             $("#status_msg p").remove();
@@ -60,17 +60,17 @@
        for when a user clicks the Submit button. 
     */
     $("#username_submit").on("click submit", function() {
-        getUserRepo($("#username_form > input").val());
+        listUserRepo($("#username_form > input").val());
     });
 
     /* Handles the scenario when a user
-       pressed the Enter key to submit username.
+       presses the Enter key to submit username.
     */
     $("#username_form input").keypress(function(e) {
         // Get user's repo data if keycode 13 (Enter) is pressed.
         if (e.which == 13) {
             e.preventDefault();
-            getUserRepo($("#username_form > input").val());
+            listUserRepo($("#username_form > input").val());
         }
     });
 })();
