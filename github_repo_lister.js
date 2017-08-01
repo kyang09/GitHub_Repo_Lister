@@ -32,7 +32,7 @@
                         "<td>" + data[i]["name"] + "</td>" + 
                         "<td><a href='" + data[i]["html_url"] + "'>" + data[i]["html_url"] +"</a></td>" + 
                         "<td>" + data[i]["owner"]["login"] + "</td>" + 
-                        "<td><img src='" + data[i]["owner"]["avatar_url"] + "' alt='Smiley face' height='42' width='42'></td>" + 
+                        "<td><img src='" + data[i]["owner"]["avatar_url"] + "' alt='Avatar' height='42' width='42'></td>" + 
                     "</tr>"
                 );
             }
