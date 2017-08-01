@@ -3,7 +3,7 @@
  * github_repo_lister.js
  * by Kevin Yang
  * 
- * Processes repositories data received from GitHub API and
+ * Processes repository data received from GitHub API and
  * formats the data to display available repositories in a table.
  */
 
@@ -45,14 +45,14 @@
     */
     $.ajaxSetup({
         statusCode : {
-        404 : function (jqxhr, textStatus, errorThrown) {
-            //Remove the status message if any exists. 
-            if ($("#status_msg p").length > 0) {
-                $("#status_msg p").remove();
-            }
+            404 : function (jqxhr, textStatus, errorThrown) {
+                //Remove the status message if any exists. 
+                if ($("#status_msg p").length > 0) {
+                    $("#status_msg p").remove();
+                }
 
-            $("#status_msg").append("<p>User " + $("#username_form > input").val() + " not found!</p>");
-           }
+                $("#status_msg").append("<p>User " + $("#username_form > input").val() + " not found!</p>");
+            }
         }
     });
 
