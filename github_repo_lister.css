@@ -1,0 +1,26 @@
+/**
+ * Github Repo Lister Stylesheet
+ * github_repo_lister.css
+ * by Kevin Yang
+ *
+ * Styles for Github Repo Lister.
+ */
+
+#github_list_table {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#github_list_table tr td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+#github_list_table th {
+    border: 1px solid black;
+}
+
+#status_msg {
+    height: 20px;
+}

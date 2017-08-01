@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="github_repo_lister.css">
+    <title>Github Repo Lister</title>
+  </head>
+  <body>
+
+    <form id="username_form">
+      Github Username:<br>
+      <input type="text" name="username" value="">
+      <br>
+      <button id="username_submit" type="button">Submit</button>
+    </form> 
+
+    <div id="status_msg"></div>
+
+    <table id="github_list_table">
+      <tr>
+        <th>Repository Name</th>
+        <th>Repository URL</th>
+        <th>Owner name</th>
+        <th>Owner Avatar</th>
+      </tr>
+    </table>
+    
+    <script src="github_repo_lister.js"></script>
+  </body>
+</html>
